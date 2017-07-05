@@ -14,7 +14,7 @@
  		$image_size = getimagesize($_FILES['image']['tmp_name']);
 
 
-
+ 		echo "<form action=\"../index.php\"><input type= \"submit\" value=\"Back to home\" /></form>";
  		if($image_size == FALSE)
  		echo "Thats not a image";
  		else{

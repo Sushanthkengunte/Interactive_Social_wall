@@ -4,7 +4,7 @@
 	$username = "root";
 	$user_password = "Syracuse@13210";
 	$db_to_connect = "medaux";
-
+	
 	$mysqli = new mysqli($host, $username, $user_password, $db_to_connect);
 	if (!$mysqli->connect_errno) {
    //echo $mysqli->host_info . "\n";
@@ -18,11 +18,8 @@
 
 	$sql = "SELECT * FROM imagetable WHERE id =\"$id\"";
 	$image = $mysqli->query($sql) or die($mysqli->error);
-	//$image = mysqli_query($link, $sql);
-	//$image = $image->fetch_assoc();
 	$image = mysqli_fetch_assoc($image);
 	$image = $image["imagesOf"];
-	//header("Content-type: image/jpeg");
 	echo $image;
 	//echo '<img src="data:image/jpeg;base64,' . base64_encode( $image ) . '" />';
 
@@ -32,6 +29,10 @@
 			//$image = $result->fetch_assoc();
 			$image = $result->fetch_array(MYSQLI_BOTH);
 			echo $image_name = $image['id'];*/
+
+
+
+
 
 
 			/*else{
