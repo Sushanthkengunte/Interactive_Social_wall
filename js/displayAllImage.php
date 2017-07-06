@@ -17,7 +17,10 @@
    				 /*<form method=\"post\" action=\"images/deleteImages.php\">
    				<button type = \"submit\" id=\"$row[0]\" name = \"deleteImage\" value = \"$row[0]\">Delete</button>
 
-   				<a href=\"images/deleteImages.php?id=$row[0]\">Delete</a>*/
+   				<a href=\"images/deleteImages.php?id=$row[0]\">Delete</a>
+				<a href=\"videos/deleteVideos.php?id=$correctValue\">Delete</a>
+
+   				*/
 			?>
 
 
