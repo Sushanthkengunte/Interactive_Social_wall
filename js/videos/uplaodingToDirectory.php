@@ -1,5 +1,10 @@
 
 <?php 
+	/*This inserts the selected video into "videotable" in mySQL database and copies the file to a folder "Uploads" present in the same path.
+		It provides a home button to go back to the home page which is at a relative path "../index.php". 
+
+	*/
+
 include '../connect.php';
  if(isset($_POST['submit'])){
 $target_dir = "Uploads/";

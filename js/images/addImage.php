@@ -1,21 +1,21 @@
 <!DOCTYPE html>
+<!--This page provides an interface to take a image file as input.
+	It requires insertingIntoDB.php in the same path as it jumps to that file when click upload.
+	and provides a home button to go back to the home page which is at a relative path "../index.php". 
+-->
 <html>
   <head>
-    <title>Ajax interpreter</title>
+    <title>Add Images</title>
   <head>
   <body>
     <div id = "Content">
 		<form method="post"	action = "insertingIntoDB.php" enctype="multipart/form-data">
-		<!--<input type="hidden" name="size" value = "10000000" id = "display">-->
 		<div>
 			<input type="file" name="image" id = "imageSelected" required="true">
 
 		</div>
 		<img id = "img_otpt">
-			<!--<div>
-				<textarea name = "text" rows = "4" placeholder="Say something"></textarea>
-				add back button to home page
-			</div>-->
+			
 			<div><input type="submit" name="upload" value = "upload"></div>
 
 			

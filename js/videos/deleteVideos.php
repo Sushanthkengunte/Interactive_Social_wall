@@ -1,5 +1,8 @@
 <?php
 
+/*when delete link is clicked this page gets the id of the video to be deleated
+	It deletes videos from videotable in mySQl database and deletes videos in the uUploads folder.
+*/
 	$id = $_GET['id'];
 	$fileNameArray = explode(',', $id);
 	$correctID = $fileNameArray[0];

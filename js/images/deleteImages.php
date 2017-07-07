@@ -1,5 +1,7 @@
 <?php
- 
+ /*when delete link is clicked this page gets the id of the image to be deleated
+	It deletes videos from imagetable in mySQl database.
+*/
 	$id = $_GET['id'];
 	include '../connect.php';
 

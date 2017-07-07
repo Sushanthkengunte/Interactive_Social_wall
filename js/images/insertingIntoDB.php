@@ -1,5 +1,9 @@
 <?php
-	error_reporting(E_ALL ^ E_WARNING);
+	/*This inserts the selected image into "imagetable" in mySQL database
+		It outputs the uploaded image using get.php present in the same path.
+		It provides a home button to go back to the home page which is at a relative path "../index.php". 
+
+	*/
 	if(isset($_POST['upload'])){
  	//connect to the database
 	include '../connect.php';

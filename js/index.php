@@ -1,3 +1,8 @@
+<!-- This is the Home page of the website. It requires displayAllImage.php and displayAllVideos.php to be in the same same path.
+      It creates a webpage with two tab images and videos who's content are provided by displayAllImage.php and displayAllVideos.php.
+      Images tab is opened by default.
+  -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,7 +10,7 @@
     <link rel = "stylesheet" type = "text/css" href = "myStyle.css" />
   <head>
   <body>
-
+<!-- logo is displayed in the center-->
   <table align="center"> 
     <tr>
         <td class="height" style="text-align: center; vertical-align: middle;" >
@@ -14,7 +19,7 @@
     </tr>
 </table>
 
-  
+  <!-- implementing tab buttons with on click functionality-->
   	<div class="tab">
   	<button class="tablinks" onclick="openMedia(event, 'images')" id="defaultOpen">Images</button>
   	<button class="tablinks" onclick="openMedia(event, 'videos')" id="videoTab">Videos</button>
@@ -22,22 +27,18 @@
 	</div>
 
 <div id="images" class="tabcontent">
+<!-- Provides the content for image tab-->
  <?php
 		include 'displayAllImage.php';
 ?>
 </div>
-
+<!-- Provides the content for videos tag-->
 <div id="videos" class="tabcontent">
   <?php
 		include 'displayAllVideos.php';
 ?>
 </div>
 
-<!--
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>-->
     
 <script>
 function openMedia(evt, cityName) {
@@ -53,6 +54,7 @@ function openMedia(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+<!---->
 document.getElementById("defaultOpen").click();
 </script>	
 	

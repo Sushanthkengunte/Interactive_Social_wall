@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--This page provides an interface to take a video file as input and a description for the video.
+	It requires uplaodingToDirectory.php in the same path as it jumps to that file when click upload.
+	and provides a home button to go back to the home page which is at a relative path "../index.php". 
+-->
 	<html>
 	<head>
 		<meta charset="utf-8">
