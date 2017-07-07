@@ -11,6 +11,7 @@ error_reporting(E_ERROR | E_PARSE);
           //updates the like of a image using its id
           $sql = "UPDATE videotable set likes_of = likes_of+1 where id = $id_of";
           $image = $mysqli->query($sql) or die($mysqli->error);
+         // echo "<script> function myFunction() { document.getElementById(\"videoTab\").click(); } myFunction();</script>";
         }
 //Retrieves all the images in the mySQl database.
   $sql = "SELECT * FROM videotable ORDER BY ID DESC";
