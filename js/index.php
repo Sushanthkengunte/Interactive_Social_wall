@@ -10,14 +10,14 @@
     <link rel = "stylesheet" type = "text/css" href = "myStyle.css" />
   <head>
   <body>
-<!-- logo is displayed in the center-->
+<!-- logo is displayed in the center
   <table align="center"> 
     <tr>
         <td class="height" style="text-align: center; vertical-align: middle;" >
               <img src="home_page_image.png" alt="Smiley face" width="500" height="150">
         </td>
     </tr>
-</table>
+</table>-->
 
   <!-- implementing tab buttons with on click functionality-->
   	<div class="tab">
