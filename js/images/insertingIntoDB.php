@@ -1,5 +1,5 @@
 <?php
-
+	error_reporting(E_ALL ^ E_WARNING);
 	if(isset($_POST['upload'])){
  	//connect to the database
 	include '../connect.php';

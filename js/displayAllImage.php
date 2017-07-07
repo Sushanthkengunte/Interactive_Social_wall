@@ -1,6 +1,6 @@
 				<?php
 		include 'connect.php';
-				
+				error_reporting(E_ERROR | E_PARSE);
 			if($_GET['Likeid']){
 					$id_of = $_GET['Likeid'];
 					$sql = "UPDATE imagetable set likes_of = likes_of+1 where id = $id_of";

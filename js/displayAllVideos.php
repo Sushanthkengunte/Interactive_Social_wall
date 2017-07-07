@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 	 include 'connect.php';
       if($_GET['Likeidvideo']){
           $id_of = $_GET['Likeidvideo'];

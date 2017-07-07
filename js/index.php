@@ -6,6 +6,14 @@
   <head>
   <body>
 
+  <table align="center"> 
+    <tr>
+        <td class="height" style="text-align: center; vertical-align: middle;" >
+              <img src="home_page_image.png" alt="Smiley face" width="500" height="150">
+        </td>
+    </tr>
+</table>
+
   
   	<div class="tab">
   	<button class="tablinks" onclick="openMedia(event, 'images')" id="defaultOpen">Images</button>
