@@ -6,9 +6,11 @@
 	$fileNameIs = end($fileNameArray);
 	include '../connect.php';
 
+	 $dir = "Uploads".'/'.$fileNameIs;
+     unlink($dir);
     
   	
-	 $sql = "DELETE FROM tableforvideos WHERE id=$correctID";
+	 $sql = "DELETE FROM videotable WHERE id=$correctID";
 	if($mysqli->query($sql))
 		echo "Record Successfully deleted";
 	else
@@ -19,3 +21,4 @@
 	echo "<form action=\"../index.php\"><input type= \"submit\" value=\"Back to home\" /></form>";
 
 ?>
+

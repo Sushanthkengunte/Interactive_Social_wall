@@ -9,7 +9,7 @@
   
   	<div class="tab">
   	<button class="tablinks" onclick="openMedia(event, 'images')" id="defaultOpen">Images</button>
-  	<button class="tablinks" onclick="openMedia(event, 'videos')">Videos</button>
+  	<button class="tablinks" onclick="openMedia(event, 'videos')" id="videoTab">Videos</button>
   
 	</div>
 
@@ -24,6 +24,7 @@
 		include 'displayAllVideos.php';
 ?>
 </div>
+
 <!--
 <div id="Tokyo" class="tabcontent">
   <h3>Tokyo</h3>

@@ -9,6 +9,18 @@ if ($mysqli->connect_errno) {
    echo "error connecting db";
 }
 
+/*if($_GET['id']){
+					$id = $_GET['id'];
+					alert(1);
+				}
+
+
+
+
+<a href=\"displayAllImage.php?id=$row[0]\">Delete</a>
+				*/
+
+
 
 
 ?>

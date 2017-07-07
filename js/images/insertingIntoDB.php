@@ -18,7 +18,7 @@
  		if($image_size == FALSE)
  		echo "Thats not a image";
  		else{
- 			$sql = "INSERT INTO imagetable VALUES (NULL, '$image_name','$imageSaved')";
+ 			$sql = "INSERT INTO imagetable VALUES (NULL, '$image_name','$imageSaved',0)";
  			if(! $mysqli->query($sql))
  			echo "Problem uploading image";
  			else{

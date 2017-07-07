@@ -8,7 +8,7 @@
 		<form method="post"	action = "insertingIntoDB.php" enctype="multipart/form-data">
 		<!--<input type="hidden" name="size" value = "10000000" id = "display">-->
 		<div>
-			<input type="file" name="image" id = "imageSelected">
+			<input type="file" name="image" id = "imageSelected" required="true">
 
 		</div>
 		<img id = "img_otpt">
@@ -18,8 +18,10 @@
 			</div>-->
 			<div><input type="submit" name="upload" value = "upload"></div>
 
-
+			
 		</form>
+		<br>
+		<form 	action = "../index.php"><input type="submit" value = "Back to home"></div></form>
 
 	</div>	
   <body>
